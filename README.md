@@ -1,5 +1,4 @@
-# This repository is not fully complete yet.
-# Please come back soon.
+# This repository is not fully complete yet. Please come back soon.
 
 # MrAPI Website
 ## Usage
