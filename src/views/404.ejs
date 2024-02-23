@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html id="page" dir="rtl" lang="fa-ir" class="dark">
+<html id="page" dir="rtl" class="dark">
     <head>
-        <title>آقای ای‌پی‌آی</title>
+        <title>آقای ای‌پی‌آی - صفحه مورد نظر پیدا نشد</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="/output.min.css" rel="stylesheet" />
@@ -11,8 +11,18 @@
             rel="stylesheet"
         />
         <script src="../../node_modules/flowbite/dist/flowbite.min.css"></script>
+        <!-- <link rel="stylesheet" href="./styles/blockTheme.css" /> -->
+        <link rel="stylesheet" href="/styles/agate.min.css" />
+        <script src="/scripts/highlight.min.js"></script>
+        <script src="/scripts/languages/javascript.min.js"></script>
+        <script src="/scripts/languages/python.min.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
     </head>
-    <body class="bg-gray-100 overflow-y-scroll no-scrollbar dark:bg-gray-800 min-h-screen">
+    <body
+        class="bg-gray-100 overflow-y-scroll no-scrollbar dark:bg-gray-800 min-h-screen"
+    >
         <header>
             <nav
                 class="fixed w-full z-20 top-0 start-0 border-gray-200 bg-white dark:bg-gray-900 fix"
@@ -523,50 +533,78 @@
                 </div>
             </nav>
         </header>
-        <main class="flex flex-col items-center">
-            <div
-                class="container mt-20 grid gap-3 sm:gap-4 lg:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5"
-            >
-                <% services.forEach(service => { %>
+        <main>
+            <section class="bg-white dark:bg-gray-900">
                 <div
-                    class="max-w-full w-screen h-auto p-6 grow-0 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                    class="container flex items-center min-h-screen px-6 py-12 mx-auto"
                 >
-                    <a href="#">
-                        <h5
-                            class="mb-2 text-3xl font-yekan-bold tracking-tight text-gray-900 dark:text-white"
-                        >
-                            <%= service.name %>
-                        </h5>
-                    </a>
-                    <p
-                        class="mb-3 text-lg font-yekan text-gray-700 dark:text-gray-400"
+                    <div
+                        class="flex flex-col items-center max-w-sm mx-auto text-center"
                     >
-                        <%= service.descriptionShort %>
-                    </p>
-                    <a
-                        href="/apis/api/<%= service.url %>"
-                        class="inline-flex items-center px-3 py-2 text-base font-yekan-bold text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                        ادامه مطلب
-                        <svg
-                            class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 14 10"
+                        <p
+                            class="p-3 text-sm font-medium text-blue-500 rounded-full bg-blue-50 dark:bg-gray-800"
                         >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
                                 stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9"
-                            />
-                        </svg>
-                    </a>
+                                stroke="currentColor"
+                                class="w-6 h-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
+                                />
+                            </svg>
+                        </p>
+                        <h1
+                            class="mt-3 text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl"
+                        >
+                            صفحه پیدا نشد
+                        </h1>
+                        <p class="mt-4 text-gray-500 dark:text-gray-400">
+                            صفحه ای که به دنبالش بودید پیدا نشد. در اینجا چند
+                            لینک کاربردی وجود دارد:
+                        </p>
+
+                        <div
+                            class="flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto"
+                        >
+                            <a
+                            href="/"
+                                role="button"
+                                class="flex items-center justify-center w-1/2 px-5 py-2 text-md text-yekan text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-5 h-5 rtl:rotate-180"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+                                    />
+                                </svg>
+
+                                <span> رفتن به خانه </span>
+                            </a>
+
+                            <a href="/apis"
+                                role="button"
+                                class="w-1/2 px-5 py-2 text-md text-yekan tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600"
+                            >
+                                دیدن ای‌پی‌آی ها
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <% }) %>
-            </div>
+            </section>
         </main>
         <footer class="bg-white dark:bg-gray-900 sticky w-full top-full">
             <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -946,5 +984,27 @@
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
         <script src="/scripts/toggleDarkMode.js"></script>
+        <script>
+            const clipboard = FlowbiteInstances.getInstance(
+                "CopyClipboard",
+                "2-copy-text"
+            );
+            const $defaultMessage = document.getElementById("default-message");
+            const $successMessage = document.getElementById("success-message");
+            clipboard.updateOnCopyCallback((clipboard) => {
+                showSuccess();
+                setTimeout(() => {
+                    resetToDefault();
+                }, 2000);
+            });
+            const showSuccess = () => {
+                $defaultMessage.classList.add("hidden");
+                $successMessage.classList.remove("hidden");
+            };
+            const resetToDefault = () => {
+                $defaultMessage.classList.remove("hidden");
+                $successMessage.classList.add("hidden");
+            };
+        </script>
     </body>
 </html>

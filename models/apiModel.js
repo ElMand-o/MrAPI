@@ -19,7 +19,7 @@ const apiSchema = new mongoose.Schema({
     },
     dateCreated: {
         type: Date,
-        default: Date.now(),
+        requried: true
     },
     creator: {
         // type: mongoose.Types.ObjectId,
@@ -30,6 +30,10 @@ const apiSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true,
+    },
+    tag: {
+        type: String,
+        required: true,
     },
 });
 
