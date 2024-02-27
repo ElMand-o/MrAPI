@@ -35,7 +35,7 @@ class ApiController {
             
             next();
         } catch (error) {
-            res.render("updateApi", { errors: { msg: "خدا هنگام بروزرسانی اطلاعات" } });
+            res.render("updateApi", { errors: { msg: "خطا هنگام بروزرسانی اطلاعات" } });
         }
     }
 }

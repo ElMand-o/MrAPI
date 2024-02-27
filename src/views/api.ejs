@@ -539,6 +539,10 @@
                         <div class="p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="stats" role="tabpanel" aria-labelledby="stats-tab">
                             <dl class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
                                 <div class="font-yekan-bold flex flex-col items-center justify-center">
+                                    <dt class="mb-2 text-3xl text-center font-extrabold"><%= data.name %></dt>
+                                    <dd class="text-gray-500 dark:text-gray-400">نام</dd>
+                                </div>
+                                <div class="font-yekan-bold flex flex-col items-center justify-center">
                                     <dt class="mb-2 text-3xl font-extrabold"><%= data.statistics.totalRequests %></dt>
                                     <dd class="text-gray-500 dark:text-gray-400">درخواست در کل</dd>
                                 </div>
@@ -553,10 +557,6 @@
                                 <div class="font-yekan-bold flex flex-col items-center justify-center">
                                     <dt class="mb-2 text-3xl font-extrabold"><%= data.statistics.uptime %></dt>
                                     <dd class="text-gray-500 dark:text-gray-400">پایداری</dd>
-                                </div>
-                                <div class="font-yekan-bold flex flex-col items-center justify-center">
-                                    <dt class="mb-2 text-xl text-center font-extrabold"><%= data.dateCreated.toString().replace("GMT+0330 (Iran Standard Time)", "") %></dt>
-                                    <dd class="text-gray-500 dark:text-gray-400">زمان ساخت</dd>
                                 </div>
                                 <div class="font-yekan-bold flex flex-col items-center justify-center">
                                     <dt class="mb-2 text-3xl font-extrabold"><%= data.creator %></dt>
