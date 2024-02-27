@@ -3,10 +3,10 @@
 # MrAPI Website
 ## Usage
 ### Install packages
-```bash
+```shell
 npm i
 ```
 ### Run the app
-```bash
+```shell
 npm start
 ```
