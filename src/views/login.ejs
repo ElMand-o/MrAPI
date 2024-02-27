@@ -11,7 +11,9 @@
         />
         <script src="../../node_modules/flowbite/dist/flowbite.min.css"></script>
     </head>
-    <body class="bg-gray-100 overflow-y-scroll no-scrollbar dark:bg-gray-800 min-h-screen">
+    <body
+        class="bg-gray-100 overflow-y-scroll no-scrollbar dark:bg-gray-800 min-h-screen"
+    >
         <header>
             <nav
                 class="fixed w-full z-20 top-0 start-0 border-gray-200 bg-white dark:bg-gray-900 fix"
@@ -483,13 +485,13 @@
                             </div>
                             <form action="/search" method="post">
                                 <input
-                                type="text"
-                                name="query"
-                                id="search-navbar"
-                                class="block font-yekan text-lg w-full p-2 ps-10 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="جستجو..."
-                            />
-                            <input type="submit" hidden>
+                                    type="text"
+                                    name="query"
+                                    id="search-navbar"
+                                    class="block font-yekan text-lg w-full p-2 ps-10 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="جستجو..."
+                                />
+                                <input type="submit" hidden />
                             </form>
                         </div>
                         <ul
@@ -616,9 +618,13 @@
                             <h1
                                 class="text-2xl font-yekan-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white"
                             >
-                            ورود به حساب کاربری
+                                ورود به حساب کاربری
                             </h1>
-                            <form class="space-y-4 md:space-y-6" action="/user/login" method="post">
+                            <form
+                                class="space-y-4 md:space-y-6"
+                                action="/user/login"
+                                method="post"
+                            >
                                 <div>
                                     <label
                                         for="email"
@@ -683,7 +689,7 @@
                                 <p
                                     class="text-sm font-light text-gray-500 dark:text-gray-400"
                                 >
-                                 هنوز حساب کاربری ندارید؟
+                                    هنوز حساب کاربری ندارید؟
                                     <a
                                         href="http://localhost/user/signup"
                                         class="font-medium text-primary-600 hover:underline dark:text-primary-500"

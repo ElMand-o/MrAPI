@@ -4,7 +4,6 @@
         <title>آقای ای‌پی‌آی - ثبت نام</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- <link rel="stylesheet" href="/styles/properties.css"> -->
         <link href="/tailwind.min.css" rel="stylesheet" />
         <link
             href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
@@ -486,13 +485,13 @@
                             </div>
                             <form action="/search" method="post">
                                 <input
-                                type="text"
-                                name="query"
-                                id="search-navbar"
-                                class="block font-yekan text-lg w-full p-2 ps-10 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="جستجو..."
-                            />
-                            <input type="submit" hidden>
+                                    type="text"
+                                    name="query"
+                                    id="search-navbar"
+                                    class="block font-yekan text-lg w-full p-2 ps-10 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="جستجو..."
+                                />
+                                <input type="submit" hidden />
                             </form>
                         </div>
                         <ul
@@ -621,7 +620,11 @@
                             >
                                 ساخت حساب کاربری
                             </h1>
-                            <form class="space-y-4 md:space-y-6" action="/user/signup" method="post">
+                            <form
+                                class="space-y-4 md:space-y-6"
+                                action="/user/signup"
+                                method="post"
+                            >
                                 <div>
                                     <label
                                         for="email"
